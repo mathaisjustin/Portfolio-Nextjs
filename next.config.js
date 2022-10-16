@@ -1,5 +1,5 @@
 const nextConfig = {
   reactStrictMode: true,
-  distDir: ".next",
+  distDir: "build",
 };
 module.exports = nextConfig;
