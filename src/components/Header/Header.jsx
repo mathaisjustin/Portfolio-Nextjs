@@ -31,11 +31,11 @@ const Header = () =>  (
           <NavLink>About</NavLink>
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="#">
           <NavLink>Blog</NavLink>
         </Link>
-      </li>
+      </li> */}
     </Div2>
 
     <Div3>
