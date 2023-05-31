@@ -19,7 +19,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -46,21 +46,22 @@ const Timeline = () => {
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      I am a computer application student from Mangalore. Whether it's websites, applications, or anything in between, I'm passionate about creating things for the internet. My objective is to always create products that offer responsive, pixel-perfect experiences.
+
+        Hailing from the vibrant city of Mangalore, I am an ambitious computer application student driven by a relentless passion for crafting extraordinary creations for the digital world. Whether it be designing captivating websites, developing cutting-edge applications, or exploring the endless possibilities in between, I thrive on the excitement of bringing ideas to life on the internet's canvas. With a steadfast commitment to excellence, my ultimate goal is to produce products that not only offer seamless responsiveness but also deliver pixel-perfect experiences that captivate and inspire users. I am currently seeking a full-time position as a developer, where I can leverage my skills to help your company achieve its goals.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}> 
-      <>
-      {TimeLineData.map((item, index) => (
-         <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
-            <CarouselItem
-            index = {index}
-            id={`carousel__item-${index}`}
-            active={activeItem}
-            onClick={(e) => handleClick(e, index)}
-            >
-              <CarouselItemTitle>
-                {item.year}
-                <CarouselItemImg
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+        <>
+          {TimeLineData.map((item, index) => (
+            <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+              <CarouselItem
+                index={index}
+                id={`carousel__item-${index}`}
+                active={activeItem}
+                onClick={(e) => handleClick(e, index)}
+              >
+                <CarouselItemTitle>
+                  {item.year}
+                  <CarouselItemImg
                     width="208"
                     height="6"
                     viewBox="0 0 208 6"
@@ -90,16 +91,16 @@ const Timeline = () => {
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>
-              </CarouselItemTitle>
-              <CarouselItemText>{item.text}</CarouselItemText>
-            </CarouselItem>
-         </CarouselMobileScrollNode>
-      ))}
-      </>
+                </CarouselItemTitle>
+                <CarouselItemText>{item.text}</CarouselItemText>
+              </CarouselItem>
+            </CarouselMobileScrollNode>
+          ))}
+        </>
       </CarouselContainer>
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
-          <CarouselButton 
+          <CarouselButton
             key={index}
             index={index}
             active={activeItem}

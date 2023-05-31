@@ -12,7 +12,7 @@ const Hero = () => (
         Justin Mathais
       </SectionTitle>
       <SectionText>
-      I am a enthusiast for building web application.
+        I am a enthusiast for building web and mobile based application.
       </SectionText>
       <Button><a href="/assets/Resume.pdf" alt="Resume" target="_blank" rel="noopener noreferrer">Download Resume</a></Button>
     </LeftSection>

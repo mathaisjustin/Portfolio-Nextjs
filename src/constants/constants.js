@@ -1,44 +1,47 @@
 export const projects = [
   {
-    title: "MERN Memories",
+    title: "Smart Parking System smartPark",
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: "/images/1.png",
-    tags: ["Mongo", "Express", "React", "Node"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "A smart parking application built with Django, Firebase, and MongoDB, with a backend model using computer vision and the CVzone module, offers a comprehensive solution for managing and optimizing parking spaces. The application leverages advanced technologies to enhance the parking experience for users and streamline parking operations.",
+    responsibility: "Backend Developer, Frontend Developer, Database Administrator, and Project Manager",
+    image: "/images/smartpark.png",
+    tags: ["Django", "Firebase", "Computer Vision", "MongoDB",],
+    visit: "https://github.com/mathaisjustin/smartPark",
+    source: "https://github.com/mathaisjustin/smartPark",
     id: 0,
   },
   {
-    title: "E-Commerce",
+    title: "JDM Jwellery Store",
     description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: "/images/2.png",
-    tags: ["React", "JavaScript"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "The eCommerce Jewelry Store built with PHP, MySQL, and Razorpay payment gateway offers a seamless online shopping experience for customers. Browse and purchase a wide range of exquisite jewelry products, securely complete transactions using various payment methods, and enjoy convenient features like order tracking and personalized user accounts.",
+    responsibility: "System Design, Front-End Development, Back-End Development, and Database Management, Payment Gateway Integration, Product Catalog Management, User Account Management",
+    image: "/images/JDM.png",
+    tags: ["php", "mysql,", "razorpay"],
+    source: "https://github.com/mathaisjustin/Jewels-Store",
+    visit: "https://github.com/mathaisjustin/Jewels-Store",
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: "Youace",
     description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/3.jpg",
-    tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "This is a Landing Page for Youace, a startup company that provides personal development for students. The website is built with HTML, CSS, Bootstrap, and JavaScript. The website is fully responsive and mobile-friendly.",
+    responsibility: "Front-End Development, Styling, and Responsiveness",
+    image: "/images/youace.png",
+    tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    source: "https://github.com/mathaisjustin/Youace-landing",
+    visit: "https://www.youace.org/",
     id: 2,
   },
-  {
-    title: "Unichat",
-    description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "/images/4.jpg",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
-    id: 3,
-  },
+  // {
+  //   title: "Unichat",
+  //   description:
+  //     "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+  //   image: "/images/4.jpg",
+  //   tags: ["React", "ChatEngine", "Firebase"],
+  //   source: "https://google.com",
+  //   visit: "https://google.com",
+  //   id: 3,
+  // },
 ];
 
 export const TimeLineData = [
@@ -58,6 +61,9 @@ export const TimeLineData = [
     year: 2023,
     text: "Shared my projects and my knowledge to the general public.",
   },
-  // { year: 2023, text: 'Graduated with my Bachelors Degree', },
+  {
+    year: 2023,
+    text: 'Graduated with my Bachelors Degree',
+  },
   // { year: 2021, text: 'Started my own platform', },
 ];

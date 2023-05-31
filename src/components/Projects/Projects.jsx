@@ -9,8 +9,8 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      <p>None are available at the moment.</p>
-      {/* {projects.map(({ id, image, title, description, tags, source, visit }) => ( 
+      {/* <p>None are available at the moment.</p> */}
+      {projects.map(({ id, image, title, description, responsibility, tags, source, visit }) => (
         <BlogCard key={id}>
           <Img src={image} />
           <TitleContent>
@@ -18,6 +18,16 @@ const Projects = () => (
             <Hr />
           </TitleContent>
           <CardInfo>{description}</CardInfo>
+          <br />
+          <div>
+            <TitleContent>Responsibility</TitleContent>
+            <CardInfo>
+              <ul>
+                <li>{responsibility}</li>
+              </ul>
+            </CardInfo>
+          </div>
+          <br />
           <div>
             <TitleContent>Stack</TitleContent>
             <TagList>
@@ -27,13 +37,14 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={visit}>Code</ExternalLinks>
-            <ExternalLinks href={source}>Source</ExternalLinks>
+            <ExternalLinks href={source}>Source Code</ExternalLinks>
+            <ExternalLinks href={visit}>Live Preview</ExternalLinks>
           </UtilityList>
         </BlogCard>
-       ))} */}
-    </GridContainer> 
+      ))}
+    </GridContainer>
   </Section>
+
 );
 
 export default Projects;
